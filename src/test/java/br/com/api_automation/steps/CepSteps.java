@@ -6,6 +6,7 @@ import static org.hamcrest.Matchers.is;
 
 import org.apache.http.HttpStatus;
 
+import br.com.api_automation.AutomationUtil;
 import br.com.api_automation.controller.cep.CepController;
 import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
@@ -20,7 +21,7 @@ public class CepSteps {
 	
 	@Before
 	public void setUp() {
-		baseURI = "https://viacep.com.br/ws";
+		baseURI = AutomationUtil.getProperty("enviroment.url");
 	}
 	
 	@Dado("que informamos um CEP válido")
