@@ -30,9 +30,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
 		</dependency>
 
 		<dependency>
@@ -43,7 +43,7 @@
 
 		<dependency>
 			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-junit</artifactId>
+			<artifactId>cucumber-core</artifactId>
 			<version>${cucumber.version}</version>
 		</dependency>
 
@@ -75,6 +75,12 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
 		</dependency>
 	</dependencies>
 

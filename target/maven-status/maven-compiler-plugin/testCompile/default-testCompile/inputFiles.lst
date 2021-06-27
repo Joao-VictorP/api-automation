@@ -1,6 +1,7 @@
 C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\runner\RunnerTest.java
+C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\controller\cep\CepController.java
 C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\tests\BaseTest.java
-C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\tests\CepTest.java
-C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\controller\CepController.java
+C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\tests\cep\CepTest.java
+C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\controller\BaseController.java
 C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\steps\CepSteps.java
 C:\Users\João Victor\eclipse-workspace\api-automation\src\test\java\br\com\api_automation\AutomationUtil.java

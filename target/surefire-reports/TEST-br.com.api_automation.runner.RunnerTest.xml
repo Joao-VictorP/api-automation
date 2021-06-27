@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="br.com.api_automation.runner.RunnerTest" time="0.016" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="br.com.api_automation.runner.RunnerTest" time="0" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="cucumber.options" value="--tags @listaCepValido"/>
@@ -66,7 +66,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="br.com.api_automation.runner.RunnerTest" name="initializationError" time="0.016">
+  <testcase classname="br.com.api_automation.runner.RunnerTest" name="initializationError" time="0">
     <error message="Failed to create scenario runner" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Failed to create scenario runner
 	at cucumber.runtime.junit.FeatureRunner.buildFeatureElementRunners(FeatureRunner.java:85)
 	at cucumber.runtime.junit.FeatureRunner.&lt;init&gt;(FeatureRunner.java:31)

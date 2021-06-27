@@ -1,4 +1,4 @@
-package br.com.api_automation.tests;
+package br.com.api_automation.tests.cep;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.is;
@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import br.com.api_automation.controller.cep.CepController;
+import br.com.api_automation.tests.BaseTest;
 import io.restassured.response.ValidatableResponse;
 
 public class CepTest extends BaseTest {

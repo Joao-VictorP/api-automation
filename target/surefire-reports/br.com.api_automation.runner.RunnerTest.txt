@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: br.com.api_automation.runner.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.279 sec <<< FAILURE!
-initializationError(br.com.api_automation.runner.RunnerTest)  Time elapsed: 0.016 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.45 sec <<< FAILURE!
+initializationError(br.com.api_automation.runner.RunnerTest)  Time elapsed: 0 sec  <<< ERROR!
 cucumber.runtime.CucumberException: Failed to create scenario runner
 	at cucumber.runtime.junit.FeatureRunner.buildFeatureElementRunners(FeatureRunner.java:85)
 	at cucumber.runtime.junit.FeatureRunner.<init>(FeatureRunner.java:31)
