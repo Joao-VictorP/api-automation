@@ -125,3 +125,4 @@
 2021-06-27 02:08:51.571 [main] [INFO ] br.com.api_automation.tests.CepTest:39 - Verificar na API CepResource se ao listarmos um CEP com mais de 8 dig�tos n�o s�o retornados CEP's
 2021-06-27 02:12:35.019 [main] [INFO ] br.com.api_automation.tests.CepTest:19 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
 2021-06-27 02:16:18.248 [main] [INFO ] br.com.api_automation.tests.CepTest:19 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-27 13:55:35.953 [main] [INFO ] br.com.api_automation.tests.CepTest:19 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado

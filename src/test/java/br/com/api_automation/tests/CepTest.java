@@ -7,7 +7,7 @@ import org.apache.http.HttpStatus;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
-import br.com.api_automation.controller.CepController;
+import br.com.api_automation.controller.cep.CepController;
 import io.restassured.response.ValidatableResponse;
 
 public class CepTest extends BaseTest {

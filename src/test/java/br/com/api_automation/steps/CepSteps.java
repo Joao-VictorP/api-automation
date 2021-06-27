@@ -1,21 +1,27 @@
 package br.com.api_automation.steps;
 
+import static io.restassured.RestAssured.baseURI;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.is;
 
 import org.apache.http.HttpStatus;
 
-import br.com.api_automation.controller.CepController;
-import br.com.api_automation.tests.BaseTest;
+import br.com.api_automation.controller.cep.CepController;
+import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import io.restassured.response.ValidatableResponse;
 
-public class CepSteps extends BaseTest {
+public class CepSteps {
 
 	private String cep;
 	private ValidatableResponse response;
+	
+	@Before
+	public void setUp() {
+		baseURI = "https://viacep.com.br/ws";
+	}
 	
 	@Dado("que informamos um CEP válido")
 	public void deve_informar_um_cep_valido() {
