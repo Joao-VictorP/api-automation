@@ -5,34 +5,34 @@
   "type": "object",
   "properties": {
     "cep": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "logradouro": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "complemento": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "bairro": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "localidade": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "uf": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "ibge": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "gia": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "ddd": {
-      "type": "string"
+      "type": ["null", "string"]
     },
     "siafi": {
-      "type": "string"
+      "type": ["null", "string"]
     }
   },
   "required": [ "cep", "logradouro", "complemento", "bairro", "localidade", "uf", "ibge", "gia", "ddd", "siafi"],
