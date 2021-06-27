@@ -1,17 +1,17 @@
 stages:
-	- build
-	- test
+   - build
+   - test
 	
 build:
-	stage: build
-	image: maven:3-jdk-11
-	script:
-		-cd api-automation
-		-mvn -Dmaven.test.skip=true clean package
+   stage: build
+   image: maven:3-jdk-11
+   script:
+      -cd api-automation
+      -mvn -Dmaven.test.skip=true clean package
 		
 test:
-	stage: test
-	image: maven:3-jdk-11
-	script:
-		- cd api-automation
-		- mvn test
+   stage: test
+   image: maven:3-jdk-11
+   script:
+      - cd api-automation
+      - mvn test
