@@ -1,0 +1,116 @@
+2021-06-19 15:48:25.141 [main] [INFO ] br.com.api_automation.Test.CepTest:17 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-19 15:48:31.674 [main] [DEBUG] org.apache.http.impl.conn.BasicClientConnectionManager:161 - Get connection for route {s}->https://viacep.com.br:443
+2021-06-19 15:48:31.940 [main] [DEBUG] org.apache.http.impl.conn.DefaultClientConnectionOperator:177 - Connecting to viacep.com.br:443
+2021-06-19 15:48:34.807 [main] [DEBUG] org.apache.http.client.protocol.RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.client.protocol.RequestAuthCache:77 - Auth cache not set in the context
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.client.protocol.RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.client.protocol.RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.impl.client.DefaultHttpClient:682 - Attempt 1 to execute request
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.impl.conn.DefaultClientConnection:274 - Sending request: GET /ws/01001000/json HTTP/1.1
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.wire:73 -  >> "GET /ws/01001000/json HTTP/1.1[\r][\n]"
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.wire:73 -  >> "Accept: */*[\r][\n]"
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.wire:73 -  >> "Host: viacep.com.br[\r][\n]"
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.wire:73 -  >> "[\r][\n]"
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.headers:278 - >> GET /ws/01001000/json HTTP/1.1
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.headers:281 - >> Content-Type: application/json; charset=UTF-8
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.headers:281 - >> Accept: */*
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.headers:281 - >> Host: viacep.com.br
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.headers:281 - >> Connection: Keep-Alive
+2021-06-19 15:48:34.815 [main] [DEBUG] org.apache.http.headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+2021-06-19 15:48:34.831 [main] [DEBUG] org.apache.http.headers:281 - >> Accept-Encoding: gzip,deflate
+2021-06-19 15:48:35.022 [main] [DEBUG] org.apache.http.wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-06-19 15:48:35.022 [main] [DEBUG] org.apache.http.wire:73 -  << "Server: nginx/1.20.0[\r][\n]"
+2021-06-19 15:48:35.022 [main] [DEBUG] org.apache.http.wire:73 -  << "Date: Sat, 19 Jun 2021 18:48:35 GMT[\r][\n]"
+2021-06-19 15:48:35.022 [main] [DEBUG] org.apache.http.wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2021-06-19 15:48:35.022 [main] [DEBUG] org.apache.http.wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2021-06-19 15:48:35.022 [main] [DEBUG] org.apache.http.wire:73 -  << "Connection: keep-alive[\r][\n]"
+2021-06-19 15:48:35.022 [main] [DEBUG] org.apache.http.wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-06-19 15:48:35.038 [main] [DEBUG] org.apache.http.wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS[\r][\n]"
+2021-06-19 15:48:35.038 [main] [DEBUG] org.apache.http.wire:73 -  << "Access-Control-Allow-Headers: Content-Type, X-Request-With, X-Requested-By[\r][\n]"
+2021-06-19 15:48:35.038 [main] [DEBUG] org.apache.http.wire:73 -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-06-19 15:48:35.038 [main] [DEBUG] org.apache.http.wire:73 -  << "Access-Control-Max-Age: 86400[\r][\n]"
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.wire:73 -  << "Expires: Sat, 19 Jun 2021 19:48:35 GMT[\r][\n]"
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.wire:73 -  << "Cache-Control: max-age=3600[\r][\n]"
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.wire:73 -  << "Pragma: public[\r][\n]"
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.wire:73 -  << "Cache-Control: public[\r][\n]"
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.wire:73 -  << "[\r][\n]"
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.impl.conn.DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:262 - << HTTP/1.1 200 OK
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Server: nginx/1.20.0
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Date: Sat, 19 Jun 2021 18:48:35 GMT
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Content-Type: application/json; charset=utf-8
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Transfer-Encoding: chunked
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Connection: keep-alive
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Access-Control-Allow-Origin: *
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Access-Control-Allow-Headers: Content-Type, X-Request-With, X-Requested-By
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Access-Control-Allow-Credentials: true
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Access-Control-Max-Age: 86400
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Expires: Sat, 19 Jun 2021 19:48:35 GMT
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Cache-Control: max-age=3600
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Pragma: public
+2021-06-19 15:48:35.042 [main] [DEBUG] org.apache.http.headers:265 - << Cache-Control: public
+2021-06-19 15:48:35.059 [main] [DEBUG] org.apache.http.impl.client.DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2021-06-19 15:48:35.140 [main] [DEBUG] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2021-06-19 15:48:35.140 [main] [DEBUG] io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-06-19 15:48:35.994 [main] [DEBUG] org.apache.http.wire:73 -  << "e0[\r][\n]"
+2021-06-19 15:48:35.998 [main] [DEBUG] org.apache.http.wire:73 -  << "{[\n]"
+2021-06-19 15:48:36.004 [main] [DEBUG] org.apache.http.wire:73 -  << "  "cep": "01001-000",[\n]"
+2021-06-19 15:48:36.004 [main] [DEBUG] org.apache.http.wire:73 -  << "  "logradouro": "Pra[0xc3][0xa7]a da S[0xc3][0xa9]",[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:73 -  << "  "complemento": "lado [0xc3][0xad]mpar",[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:73 -  << "  "bairro": "S[0xc3][0xa9]",[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:73 -  << "  "localidade": "S[0xc3][0xa3]o Paulo",[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:73 -  << "  "uf": "SP",[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:73 -  << "  "ibge": "3550308",[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:73 -  << "  "gia": "1004",[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:73 -  << "  "ddd": "11",[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:73 -  << "  "siafi": "7107"[\n]"
+2021-06-19 15:48:36.006 [main] [DEBUG] org.apache.http.wire:87 -  << "}"
+2021-06-19 15:48:36.014 [main] [DEBUG] org.apache.http.wire:73 -  << "[\r][\n]"
+2021-06-19 15:48:36.014 [main] [DEBUG] org.apache.http.wire:73 -  << "0[\r][\n]"
+2021-06-19 15:48:36.014 [main] [DEBUG] org.apache.http.wire:73 -  << "[\r][\n]"
+2021-06-19 15:48:36.016 [main] [DEBUG] org.apache.http.impl.conn.BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@773cbf4f
+2021-06-19 15:48:36.016 [main] [DEBUG] org.apache.http.impl.conn.BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-06-19 15:49:24.291 [main] [INFO ] br.com.api_automation.Test.CepTest:17 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-19 15:49:47.193 [main] [INFO ] br.com.api_automation.Test.CepTest:17 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-19 15:50:28.542 [main] [INFO ] br.com.api_automation.Test.CepTest:17 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-19 15:51:04.223 [main] [INFO ] br.com.api_automation.Test.CepTest:17 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-19 17:09:18.476 [main] [INFO ] br.com.api_automation.Test.CepTest:17 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-20 00:15:38.534 [main] [INFO ] br.com.api_automation.Test.CepTest:43 - Verificasr na API CepResource se ao listarmos um CEP com mais de 8 digítos não são retornados CEP's
+2021-06-20 00:18:09.788 [main] [INFO ] br.com.api_automation.Test.CepTest:57 - Verificar na API CepResource se ao listarmos um CEP alfanumérico não são retornados CEP's
+2021-06-20 00:19:34.051 [main] [INFO ] br.com.api_automation.Test.CepTest:71 - Verificar na API CepResource se ao listarmos um CEP com espaços não são retorandos CEP's
+2021-06-20 00:22:45.618 [main] [INFO ] br.com.api_automation.Test.CepTest:85 - Verificar na API CepResource se ao listarmos um CEP inválido não são retornados CEP's
+2021-06-20 00:23:07.394 [main] [INFO ] br.com.api_automation.Test.CepTest:85 - Verificar na API CepResource se ao listarmos um CEP inválido não são retornados CEP's
+2021-06-20 13:29:41.114 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:73 - Verificar na API CepResource se ao listarmos um CEP mascarado não são retornados CEP's
+2021-06-20 13:35:45.450 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:74 - Verificar na API CepResource se ao listarmos um CEP mascarado são retornados os detalhes correspondentes ao CEP informado
+2021-06-20 13:49:02.407 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:94 - Verificar na API CepResource se ao listarmos um CEP não informando o CEP não são retornados CEP's
+2021-06-20 13:55:31.089 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 13:56:13.780 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 13:57:42.990 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 14:02:18.846 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 14:06:28.382 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 14:07:28.212 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 14:10:49.671 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 14:12:00.895 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:74 - Verificar na API CepResource se ao listarmos um CEP mascarado são retornados os detalhes correspondentes ao CEP informado
+2021-06-20 14:12:20.537 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:74 - Verificar na API CepResource se ao listarmos um CEP mascarado são retornados os detalhes correspondentes ao CEP informado
+2021-06-20 20:35:16.681 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 20:35:48.144 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 20:37:25.522 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 20:38:24.386 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-20 20:53:20.970 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:112 - Verificar na API CepResource se ao listarmos uma localidade informando uma cidade não correspondente ao estado não são retornados CEP's
+2021-06-24 23:32:27.335 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:56 - Verificar na API CepResource se ao listarmos um CEP com espa�os n�o s�o retorandos CEP's
+2021-06-24 23:32:32.015 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:102 - Verificar na API CepResource se ao listarmos uma localidade v�lida s�o retornados os detalhes correspondentes
+2021-06-24 23:32:33.156 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:64 - Verificar na API CepResource se ao listarmos um CEP inv�lido n�o s�o retornados CEP's
+2021-06-24 23:32:35.324 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:20 - Verificar na API CepResource se ao listarmos um CEP v�lido s�o retornados os detalhes correspondentes ao CEP informado
+2021-06-24 23:32:36.480 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:74 - Verificar na API CepResource se ao listarmos um CEP mascarado s�o retornados os detalhes correspondentes ao CEP informado
+2021-06-24 23:32:37.673 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:48 - Verificar na API CepResource se ao listarmos um CEP alfanum�rico n�o s�o retornados CEP's
+2021-06-24 23:32:38.569 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:112 - Verificar na API CepResource se ao listarmos uma localidade informando uma cidade n�o correspondente ao estado n�o s�o retornados CEP's
+2021-06-24 23:32:39.477 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:94 - Verificar na API CepResource se ao listarmos um CEP n�o informando o CEP n�o s�o retornados CEP's
+2021-06-24 23:32:40.342 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:40 - Verificar na API CepResource se ao listarmos um CEP com mais de 8 dig�tos n�o s�o retornados CEP's
+2021-06-24 23:42:54.938 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:20 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-24 23:43:34.909 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:20 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-24 23:44:08.630 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:20 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado

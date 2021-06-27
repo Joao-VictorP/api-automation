@@ -1,0 +1,9 @@
+-- Exemplo de comandos para executar o teste via maven
+	
+	mvn -Dtest=AutomationUtil#teste test
+
+-- Exemplos de comandos para utilizar com o profile maven
+
+	mvn -Dtest=AutomationUtil#teste test -Denviroment=test
+	mvn -Dtest=AutomationUtil#teste test -Denviroment=prod
+	mvn -Dtest=AutomationUtil#teste test -Denviroment=dev
