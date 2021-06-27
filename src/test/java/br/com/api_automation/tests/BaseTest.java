@@ -1,4 +1,4 @@
-package br.com.api_automation.Test;
+package br.com.api_automation.tests;
 
 import static io.restassured.RestAssured.baseURI;
 

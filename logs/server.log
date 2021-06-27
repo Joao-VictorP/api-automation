@@ -114,3 +114,14 @@
 2021-06-24 23:42:54.938 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:20 - Verificar na API CepResource se ao listarmos um CEP vÃ¡lido sÃ£o retornados os detalhes correspondentes ao CEP informado
 2021-06-24 23:43:34.909 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:20 - Verificar na API CepResource se ao listarmos um CEP vÃ¡lido sÃ£o retornados os detalhes correspondentes ao CEP informado
 2021-06-24 23:44:08.630 [main] [INFO ] br.com.api_automation.Test.cep_test.CepTest:20 - Verificar na API CepResource se ao listarmos um CEP vÃ¡lido sÃ£o retornados os detalhes correspondentes ao CEP informado
+2021-06-27 02:08:30.598 [main] [INFO ] br.com.api_automation.tests.CepTest:55 - Verificar na API CepResource se ao listarmos um CEP com espaços não são retorandos CEP's
+2021-06-27 02:08:39.904 [main] [INFO ] br.com.api_automation.tests.CepTest:101 - Verificar na API CepResource se ao listarmos uma localidade válida são retornados os detalhes correspondentes
+2021-06-27 02:08:43.548 [main] [INFO ] br.com.api_automation.tests.CepTest:63 - Verificar na API CepResource se ao listarmos um CEP inválido não são retornados CEP's
+2021-06-27 02:08:46.280 [main] [INFO ] br.com.api_automation.tests.CepTest:19 - Verificar na API CepResource se ao listarmos um CEP válido são retornados os detalhes correspondentes ao CEP informado
+2021-06-27 02:08:47.598 [main] [INFO ] br.com.api_automation.tests.CepTest:73 - Verificar na API CepResource se ao listarmos um CEP mascarado são retornados os detalhes correspondentes ao CEP informado
+2021-06-27 02:08:48.749 [main] [INFO ] br.com.api_automation.tests.CepTest:47 - Verificar na API CepResource se ao listarmos um CEP alfanumérico não são retornados CEP's
+2021-06-27 02:08:49.682 [main] [INFO ] br.com.api_automation.tests.CepTest:111 - Verificar na API CepResource se ao listarmos uma localidade informando uma cidade não correspondente ao estado não são retornados CEP's
+2021-06-27 02:08:50.569 [main] [INFO ] br.com.api_automation.tests.CepTest:93 - Verificar na API CepResource se ao listarmos um CEP não informando o CEP não são retornados CEP's
+2021-06-27 02:08:51.571 [main] [INFO ] br.com.api_automation.tests.CepTest:39 - Verificar na API CepResource se ao listarmos um CEP com mais de 8 digítos não são retornados CEP's
+2021-06-27 02:12:35.019 [main] [INFO ] br.com.api_automation.tests.CepTest:19 - Verificar na API CepResource se ao listarmos um CEP vÃ¡lido sÃ£o retornados os detalhes correspondentes ao CEP informado
+2021-06-27 02:16:18.248 [main] [INFO ] br.com.api_automation.tests.CepTest:19 - Verificar na API CepResource se ao listarmos um CEP vÃ¡lido sÃ£o retornados os detalhes correspondentes ao CEP informado

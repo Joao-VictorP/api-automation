@@ -1,4 +1,4 @@
-package br.com.api_automation.Test.cep_test;
+package br.com.api_automation.tests;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.is;
@@ -7,8 +7,7 @@ import org.apache.http.HttpStatus;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
-import br.com.api_automation.Controller.CepController;
-import br.com.api_automation.Test.BaseTest;
+import br.com.api_automation.controller.CepController;
 import io.restassured.response.ValidatableResponse;
 
 public class CepTest extends BaseTest {
@@ -32,7 +31,7 @@ public class CepTest extends BaseTest {
 				.body("gia", is("1004"))
 				.body("ddd", is("11"))
 				.body("siafi", is("7107"))
-				.body(matchesJsonSchemaInClasspath("cep-validator.json"));
+				.body(matchesJsonSchemaInClasspath("schema-validator/cep-validator.json"));
 	}
 	
 	@Test
@@ -86,7 +85,7 @@ public class CepTest extends BaseTest {
 				.body("gia", is("1004"))
 				.body("ddd", is("11"))
 				.body("siafi", is("7107"))
-				.body(matchesJsonSchemaInClasspath("cep-validator.json"));
+				.body(matchesJsonSchemaInClasspath("schema-validator/cep-validator.json"));
 	}
 	
 	@Test

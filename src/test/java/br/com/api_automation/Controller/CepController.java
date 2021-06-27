@@ -1,4 +1,4 @@
-package br.com.api_automation.Controller;
+package br.com.api_automation.controller;
 
 import static io.restassured.RestAssured.given;
 
