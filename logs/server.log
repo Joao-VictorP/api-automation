@@ -144,3 +144,4 @@
 2021-06-27 20:27:59.599 [main] [INFO ] br.com.api_automation.tests.cep.CepTest:112 - Verificar na API CepResource se ao listarmos uma localidade informando uma cidade n„o correspondente ao estado n„o s„o retornados CEP's
 2021-06-27 20:28:00.459 [main] [INFO ] br.com.api_automation.tests.cep.CepTest:94 - Verificar na API CepResource se ao listarmos um CEP n„o informando o CEP n„o s„o retornados CEP's
 2021-06-27 20:28:01.319 [main] [INFO ] br.com.api_automation.tests.cep.CepTest:40 - Verificar na API CepResource se ao listarmos um CEP com mais de 8 digÌtos n„o s„o retornados CEP's
+2021-08-06 15:43:30.117 [main] [INFO ] br.com.api_automation.tests.cep.CepTest:20 - Verificar na API CepResource se ao listarmos um CEP v√°lido s√£o retornados os detalhes correspondentes ao CEP informado

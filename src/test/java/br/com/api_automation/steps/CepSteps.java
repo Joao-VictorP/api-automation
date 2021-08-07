@@ -1,6 +1,5 @@
 package br.com.api_automation.steps;
 
-import static io.restassured.RestAssured.baseURI;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.is;
 
@@ -9,13 +8,11 @@ import java.util.Map;
 
 import org.apache.http.HttpStatus;
 
-import br.com.api_automation.AutomationUtil;
 import br.com.api_automation.controller.cep.CepController;
-import cucumber.api.DataTable;
-import cucumber.api.java.Before;
-import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Entao;
-import cucumber.api.java.pt.Quando;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
 import io.restassured.response.ValidatableResponse;
 
 public class CepSteps {
@@ -23,10 +20,6 @@ public class CepSteps {
 	private String cep;
 	private ValidatableResponse response;
 	
-	@Before
-	public void setUp() {
-		baseURI = AutomationUtil.getProperty("enviroment.url");
-	}
 	
 	@Dado("que informamos um (.*) válido")
 	public void deve_informar_um_cep_valido(String cep) {
@@ -68,23 +61,25 @@ public class CepSteps {
 		this.response = CepController.getCepByCodigoAndContentType(this.cep, "json");
 	}
 	
-	@Entao("são retornados os detalhes do correspondentes ao CEP")
+	@Entao("são retornados os detalhes correspondentes ao CEP")
 	public void deve_validar_os_detalhes_retornados(DataTable params) {
-		List<Map<Object, Object>> ceps = params.asMaps(null, null);
+		List<Map<String, String>> cepList = params.asMaps(String.class, String.class);
 		
-		this.response.statusCode(HttpStatus.SC_OK)
-		.assertThat()
-			.body("cep", is(ceps.get(0)))
-			.body("logradouro", is(ceps.get(1)))
-			.body("complemento", is(ceps.get(2)))
-			.body("bairro", is(ceps.get(3)))
-			.body("localidade", is(ceps.get(4)))
-			.body("uf", is(ceps.get(5)))
-			.body("ibge", is(ceps.get(6)))
-			.body("gia", is(ceps.get(7)))
-			.body("ddd", is(ceps.get(8)))
-			.body("siafi", is(ceps.get(9)))
-			.body(matchesJsonSchemaInClasspath("schema-validator/cep-validator.json"));
+		cepList.forEach(cep -> {
+			this.response.statusCode(HttpStatus.SC_OK)
+			.assertThat()
+				.body("cep", is(cep.get("cep")))
+				.body("logradouro", is(cep.get("logradouro")))
+				.body("complemento", is(cep.get("complemento")))
+				.body("bairro", is(cep.get("bairro")))
+				.body("localidade", is(cep.get("localidade")))
+				.body("uf", is(cep.get("uf")))
+				.body("ibge", is(cep.get("ibge")))
+				.body("gia", is(cep.get("gia")))
+				.body("ddd", is(cep.get("ddd")))
+				.body("siafi", is(cep.get("siafi")))
+				.body(matchesJsonSchemaInClasspath("schema-validator/cep-validator.json"));
+		});
 	}
 	
 	@Entao("não são retornados detalhes")

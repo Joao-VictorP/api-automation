@@ -1,9 +1,22 @@
--- Exemplo de comandos para executar o teste via maven
-	
+#Exemplo de comando para executar o teste via maven [JUnit]
 	mvn -Dtest=AutomationUtil#teste test
 
--- Exemplos de comandos para utilizar com o profile maven
-
+#Exemplos de comandos para utilizar com o profile maven [JUnit]
 	mvn -Dtest=AutomationUtil#teste test -Denviroment=test
 	mvn -Dtest=AutomationUtil#teste test -Denviroment=prod
 	mvn -Dtest=AutomationUtil#teste test -Denviroment=dev
+	
+#Comando para executar automação por tag
+	mvn test -Dcucumber.options="--tags @tagName"
+	
+#Comando para executar todos os testes
+	mvn test
+	
+#Comando para exceutar o teste pela linha da feature
+	mvn test -Dcucumber.options="src/test/resources/features/cep.feature:7"
+	
+#Comando para executar todos os testes de uma única feature
+	mvn -test -Dcucumber.options="src/test/resources/features/cep.feature"
+
+#Comando para gerar um relatório com os resultados dos testes do cucumber
+	mvn test -Dcucumber.options="-plugin junit:target/cucumber-reports/report.xml"
